@@ -1,0 +1,211 @@
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+.pb-dt{
+	padding-top: 6px;
+	display: block;
+}
+.pb-datahead{
+	background-color: #545454;
+	padding:12px 0px;
+}
+.pb-datatable{
+	margin: 12px auto 36px;
+	overflow: hidden;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+#pb-data >thead >tr >th{
+	font-size: 14px;
+	color: #fff;
+	text-align: left;
+	padding: 18px 8px;
+    white-space: nowrap;
+}
+#pb-data >tbody >tr >td{
+	padding:16px 6px;
+	border-bottom: 1px solid #ccc;
+}
+#pb-data >tbody >tr:nth-child(even){
+	background-color: #cccccc73;
+}
+.dataTables_filter{
+	display: none;
+}
+.dataTables_length{
+	 margin: 12px auto;
+	 left: 0;
+    cursor: pointer;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+}
+ table.dataTable tbody td{
+	padding:12px  8px;
+	color: #000;
+	font-size: 14px;
+	line-height: 18px;
+	max-width: 370px;
+	white-space: nowrap;
+}
+.pb-tImgc-cont{
+	position: relative;
+	font-size: 0px;
+	width: 370px!important;
+    white-space: initial;
+}
+.pb-tImgc-cont >a , .pb-tImgc-cont >.pb-ic{
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: top;
+}
+.pb-tImgc-cont >a{
+	width: 60px;
+	border: 2px solid green
+}
+.pb-tImgc-cont >.pb-ic{
+	width: calc(100% - 80px);
+	padding-left: 14px;
+}
+.pb-ic >p{
+	line-height: 18px;
+}
+.pb-tImgc-cont >.pb-ic >span{
+	display: block;
+	text-align: right;
+	font-size: 12px;
+	font-style: italic;
+	margin: 6px auto 0;
+}
+.pb-tImgc-cont >a >img{
+	max-width:100%;
+}
+.pb-small{
+	font-size: 12px!important;
+	text-transform: capitalize;
+}
+.pb-viewdtls{
+    background: #2c8c2cbf;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 6px 5px;
+}
+.dataTables_wrapper .dataTables_info{
+	    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0px auto;
+}
+.dataTables_wrapper .dataTables_paginate{
+	position: absolute;
+	top: 0px;
+	right: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+	  color: #fff !important;
+    border: 1px solid #40be40;
+    background: #40be40!important;
+    transition: 0.5s;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+
+    background: #40be40!important;
+    transition: 0.5s;
+        border: 1px solid #40be40;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: 4px 10px;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+   cursor: pointer;
+    color: #333 !important;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover{
+	pointer-events: none;
+	background:none!important;
+}
+table.dataTable.no-footer{
+	border:none;
+}
+.pb-viewdtls:hover {
+    background: red;
+    transition: 0.5s;
+}
+/**********pagenation************/
+.pb-tpview{
+	font-size: 0px;
+	padding:24px 12px;
+}
+.pb-nview , .pb-pagenation , .pb-sortview{
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: middle;
+	width: 33.33%;
+	text-align: right;
+}
+.pb-nview{
+	text-align: center;
+}
+.pb-sortview{
+	text-align: left;
+}
+.pb-sortview >p >select{
+margin: 0px 8px;
+padding:2px 6px;
+cursor: pointer;
+}
+.pb-pagenation >ul >li{
+	padding:0px 6px;
+}
+.pb-pagenation >ul{
+	margin: 0px -6px;
+}
+.pb-pagenation >ul >li >a{
+	display: block;
+	padding:6px 10px;
+
+}
+.pb-pagenation >ul >li >a:hover{
+		background-color: #5ba35b;
+		border-radius: 4px;
+		color: #fff;
+}
+.pb-pagenation >ul >li >a.active{
+		background-color: #5ba35b;
+		border-radius: 4px;
+		color: #fff;
+}
+
+@media only screen and (max-width: 767px){
+/****************header********************/
+.pb-consuport >li >p >span, .pb-phncont >p >span{
+	text-align: left;
+}
+.pb-brand-name{
+	margin: 70px auto 12px;
+}
+/****************header close********************/
+table.dataTable thead .sorting {
+background-image:none;
+}
+table.dataTable thead .sorting_asc{
+	background-image: none;
+}
+table.dataTable thead .sorting_desc{
+	background-image: none;
+}
+.pb-nview, .pb-pagenation, .pb-sortview{
+	width: 100%;
+}
